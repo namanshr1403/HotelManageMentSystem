@@ -107,7 +107,7 @@ public class SearchRoom extends JFrame implements ActionListener{
         if(ae.getSource() == submit){
             try{
                 String query1 = "select * from room where bed_type = '"+bedOptions.getSelectedItem()+"'";
-                String query2 ="select * from room where availablity = 'Available' AND bed_type = '"+bedOptions.getSelectedItem()+"'";
+                String query2 ="select * from room where availability = 'Available' AND bed_type = '"+bedOptions.getSelectedItem()+"'";
                 
                 Conn c = new Conn();
                 ResultSet rs;
